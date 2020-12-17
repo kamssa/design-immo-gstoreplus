@@ -209,3 +209,11 @@ ul li a {
     border-radius: 0px;
     border: 0px;
 }
+@media screen and (max-width: 800px){
+    .card-p {
+        margin-bottom: 21px;
+    }
+    .card-terrain{
+        margin-bottom: 21px;
+    }
+}
