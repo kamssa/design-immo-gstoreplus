@@ -3,13 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AccueilComponent } from './Pages/accueil/accueil.component';
 import { ComponentsModule } from './Components/components.module';
+import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
+import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AccueilComponent
+    AuthLayoutComponent,
+    AdminLayoutComponent
   ],
   imports: [
     BrowserModule,

@@ -1,18 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+
 declare interface RouteInfo {
   path: string,
   title: string,
 }
+
 export const ROUTES: RouteInfo[] = [
   { path: '/accueil', title: 'Accueil'},
-  { path: '/inscription', title: 'A propos'},
+  { path: '/propos', title: 'A propos'},
   { path: '', title: 'Maisons' },
   { path: '', title: 'Demande de dévis'},
   { path: '', title: 'Blog'},
   { path: '', title: 'Investissement'},
   { path: '', title: 'Contact'},
-  { path: '', title: 'Se connecter'}
+  { path: '/login', title: 'Se connecter'}
 ]
 @Component({
   selector: 'app-navbar',

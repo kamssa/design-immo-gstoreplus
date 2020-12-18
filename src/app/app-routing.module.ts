@@ -1,10 +1,34 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AccueilComponent } from './Pages/accueil/accueil.component';
+import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
 
 const routes: Routes = [
   { path: '',redirectTo: 'accueil',pathMatch: 'full'},
-  { path: 'accueil', component: AccueilComponent }
+  {
+    path: '',
+    component: AuthLayoutComponent,
+    children: [
+      {
+        path: '',
+        loadChildren:() => import('src/app/layouts/auth-layout/auth-layout.module').then (m => m.AuthLayoutModule)
+      }
+    ]
+  },
+  {
+    path: '',
+    component: AdminLayoutComponent,
+    children: [
+      {
+        path: '',
+        loadChildren:() => import('src/app/layouts/admin-layout/admin-layout.module').then (m => m.AdminLayoutModule)
+      }
+    ]
+  },
+  {
+    path: '**',
+    redirectTo: 'accueil'
+  }
 ];
 
 @NgModule({
