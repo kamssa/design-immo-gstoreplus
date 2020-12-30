@@ -2,9 +2,11 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
+import { PortailComponent } from 'src/app/Pages/portail/portail.component';
 
 const routes: Routes = [
-  { path: '',redirectTo: 'accueil',pathMatch: 'full'},
+  { path: '',redirectTo: 'portail',pathMatch: 'full'},
+  { path: 'portail',component: PortailComponent},
   {
     path: '',
     component: AuthLayoutComponent,
@@ -27,7 +29,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: 'accueil'
+    redirectTo: 'portail'
   }
 ];
 

@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'gestoci';
+/*   onActivate(event) {
+    //window.scroll(0,0);
+    document.body.scrollTop = 0;
+  } */
 }

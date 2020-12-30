@@ -38,3 +38,12 @@ span img {
     color: #131313;
     text-align: end;
 }
+@media screen and (max-width: 800px){
+    .mobileFooter{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .row{
+        margin-right: 0px;
+    }
+}

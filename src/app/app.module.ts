@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { ComponentsModule } from './Components/components.module';
 import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { PortailComponent } from './Pages/portail/portail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthLayoutComponent,
-    AdminLayoutComponent
+    AdminLayoutComponent,
+    PortailComponent
   ],
   imports: [
     BrowserModule,
