@@ -12,7 +12,7 @@
     height: 3rem;
 }
 .active{
-    border-bottom: 2px solid #6d49d8 !important;
+    border-bottom: 2px solid #052051 !important;
     box-shadow: 0 0 2rem 0 rgba(136, 152, 170, 0.15) !important;
     font-size: 12px;
     
@@ -24,8 +24,8 @@
 .lien:hover {
     border-left: none;
     transition: 0.5s;
-    border-color: #6d49d8;
-    color: #6d49d8 !important;
+    border-color: #052051;
+    color: #052051 !important;
     box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 .navbar-toggler {
@@ -54,4 +54,14 @@ a:hover {
 /*     .container{
         width: 100%;
     } */
+}
+@media screen and (max-width:900px)
+{
+    .navbar{
+        padding-top: 39px;
+        padding-bottom: 13px;
+    }
+    .navbar-nav{
+        padding-top: 10px;
+    }
 }

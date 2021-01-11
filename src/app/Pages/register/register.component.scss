@@ -51,12 +51,12 @@
     background-color: #dde4ec38;
 }
 .form-control:focus{
-    box-shadow: 0 0 0 0.2rem rgb(125 114 255);
+    box-shadow: 0 0 0 0.2rem #052051;
 }
 .btnValider {
     width: 100%;
-    background-color:#7d72ff !important;
-    border-color:#7d72ff !important;
+    background-color:#052051 !important;
+    border-color:#052051 !important;
 }
 .btnValider:active {
     box-shadow: none !important;
@@ -66,9 +66,24 @@
 }
 .btnValider:hover {
     background: transparent !important;
-    color:#7d72ff !important;
+    color:#052051 !important;
 }
 .loginText{
-    color: #7d72ff !important;
+    color: #052051 !important;
     font-size: 0.875rem;
+}
+@media screen and (max-width:700px){
+    .mobile-cadre{
+        display: none;
+    }
+    .card-login{
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+}
+@media screen and (max-width:800px){
+    .card-login{
+        margin-left: 33px;
+        margin-right: 33px;
+    }
 }
